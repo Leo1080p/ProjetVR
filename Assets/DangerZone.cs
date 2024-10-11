@@ -23,11 +23,16 @@ public class DangerZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        objRenderer.material.color = Color.red;
+        if (!other.CompareTag("Plateau")) {
+            objRenderer.material.color = Color.red;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        objRenderer.material.color= baseObjColor;
+        if (!other.CompareTag("Plateau"))
+        {
+            objRenderer.material.color = baseObjColor;
+        }
     }
 }
