@@ -13,6 +13,8 @@ public class DangerZone : MonoBehaviour
     void Start()
     {
         objRenderer = GetComponent<Renderer>();
+        objRenderer.material.SetFloat("_Mode", 3);
+        objRenderer.material.EnableKeyword("_ALPHABLEND_ON");
     }
 
     // Update is called once per frame
@@ -23,8 +25,11 @@ public class DangerZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.tag);
         if (!other.CompareTag("Plateau")) {
-            objRenderer.material.color = Color.red;
+            Color transparentRed = new Color(1f, 0f, 0f, 0.3f);
+            objRenderer.material.color = transparentRed;
+
         }
     }
 
