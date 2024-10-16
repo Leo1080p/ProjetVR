@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Plateau
+  - EnclosHaut
+  - EnclosDroit
+  - EnclosGauche
+  - EnclosBas
+  - Enclos
   layers:
   - Default
   - TransparentFX
