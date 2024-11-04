@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DangerZone : MonoBehaviour
@@ -10,13 +11,19 @@ public class DangerZone : MonoBehaviour
     private Renderer objRenderer;
     [SerializeField]
     private GameObject pouletPrefab;
-    
+    [SerializeField]
+    //private int score=0;
+    //public TextMeshProUGUI scoreText;
+    private GameObject currentpoulet;
+
     // Start is called before the first frame update
     void Start()
     {
         //objRenderer = GetComponent<Renderer>();
         //objRenderer.material.SetFloat("_Mode", 3);
         //objRenderer.material.EnableKeyword("_ALPHABLEND_ON");
+        
+        //scoreText.text = "0";
     }
 
     // Update is called once per frame
@@ -28,11 +35,14 @@ public class DangerZone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.tag);
-        if (!other.CompareTag("Plateau")) {
+        if (!other.CompareTag("Plateau") || !other.CompareTag("Untagged")) {
             //Color transparentRed = new Color(1f, 0f, 0f, 0.3f);
             //objRenderer.material.color = transparentRed;
+            
             Destroy(pouletPrefab);
-            Instantiate(pouletPrefab, new Vector3(46,1,2), Quaternion.identity);
+            //score += 100;
+            //scoreText.text = score.ToString();
+            currentpoulet = Instantiate(pouletPrefab, new Vector3(Random.Range(41f,55f),0.4f,Random.Range(-7.2f,7.2f)), Quaternion.identity);
 
         }
     }
@@ -41,7 +51,7 @@ public class DangerZone : MonoBehaviour
     {
         if (!other.CompareTag("Plateau"))
         {
-            Instantiate(pouletPrefab, Vector3.zero, Quaternion.identity);
+            
             //objRenderer.material.color = baseObjColor;
         }
     }

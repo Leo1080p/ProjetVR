@@ -3591,7 +3591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e8ca1e04d6ccd0043bf16fa5844e8852, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4815,7 +4815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e8ca1e04d6ccd0043bf16fa5844e8852, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5682,14 +5682,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.93962264, g: 0.8741742, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: cc57a829a62f1d540a6283877cb8a9a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5780,7 +5780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e8ca1e04d6ccd0043bf16fa5844e8852, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6392,14 +6392,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9381077, b: 0.020754695, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: cc57a829a62f1d540a6283877cb8a9a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6677,14 +6677,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.98024654, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: cc57a829a62f1d540a6283877cb8a9a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8374,9 +8374,10 @@ GameObject:
   - component: {fileID: 661078184677287272}
   - component: {fileID: 661078184677287273}
   - component: {fileID: 661078184677287274}
+  - component: {fileID: 661078184677287275}
   m_Layer: 0
   m_Name: foxy2222
-  m_TagString: Untagged
+  m_TagString: Foxy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8456,6 +8457,20 @@ MonoBehaviour:
   VieVide1: {fileID: 1885499840}
   VieVide2: {fileID: 1755880367}
   VieVide3: {fileID: 1934467498}
+--- !u!114 &661078184677287275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661078184677287270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a19cd3b2e70de4caf00551800fe175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 780516528}
 --- !u!1 &948757274914111833
 GameObject:
   m_ObjectHideFlags: 0
@@ -11919,7 +11934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8207042516569645231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94216b63d778b904089a1850124bf314, type: 3}
   m_Name: 
@@ -11933,7 +11948,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8207042516569645231}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 973ef92067136054882d1897cb9bd5be, type: 3}
   m_Name: 
@@ -11941,6 +11956,7 @@ MonoBehaviour:
   baseObjColor: {r: 0, g: 0, b: 0, a: 0}
   objRenderer: {fileID: 0}
   pouletPrefab: {fileID: 8207042516569645231}
+  currentpoulet: {fileID: 0}
 --- !u!114 &8451766650619647048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11948,7 +11964,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8207042516569645231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 53e2da4b5da7a55499c0bff225bed91d, type: 3}
   m_Name: 
@@ -11989,6 +12005,7 @@ MonoBehaviour:
   baseObjColor: {r: 1, g: 1, b: 1, a: 0.039215688}
   objRenderer: {fileID: 0}
   pouletPrefab: {fileID: 0}
+  currentpoulet: {fileID: 0}
 --- !u!1 &8557520653096578736
 GameObject:
   m_ObjectHideFlags: 0

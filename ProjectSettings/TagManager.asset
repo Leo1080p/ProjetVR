@@ -10,6 +10,7 @@ TagManager:
   - EnclosGauche
   - EnclosBas
   - Enclos
+  - Foxy
   layers:
   - Default
   - TransparentFX
