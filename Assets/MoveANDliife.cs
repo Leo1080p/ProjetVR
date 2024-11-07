@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MoveANDlife : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class MoveANDlife : MonoBehaviour
     public GameObject VieVide1;
     public GameObject VieVide2;
     public GameObject VieVide3;
+    public TextMeshProUGUI TextGameOver;
 
     private int life = 3;
 
@@ -77,6 +80,9 @@ public class MoveANDlife : MonoBehaviour
                 life--;
 
                 // Message gameOver
+                TextGameOver.gameObject.SetActive(true);
+                //yield WaitForSeconds(5);
+                //SceneManager.LoadScene("MainMenu");
             }
 
             if (life == 2)
