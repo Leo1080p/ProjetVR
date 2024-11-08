@@ -81,8 +81,8 @@ public class MoveANDlife : MonoBehaviour
 
                 // Message gameOver
                 TextGameOver.gameObject.SetActive(true);
-                //yield WaitForSeconds(5);
-                //SceneManager.LoadScene("MainMenu");
+                StartCoroutine(changeScene());
+                
             }
 
             if (life == 2)
@@ -104,5 +104,11 @@ public class MoveANDlife : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         hasResetPosition = false;
+    }
+
+    private IEnumerator changeScene()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene("MainMenu");
     }
 }

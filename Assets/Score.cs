@@ -23,7 +23,7 @@ public class Score : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Plateau") || !other.CompareTag("EnclosHaut") || !other.CompareTag("EnclosBas") || !other.CompareTag("EnclosGauche") || !other.CompareTag("EnclosDroit"))
+        if (other.CompareTag("chicken"))
         {
             score += 100;
             //scoreText.text = score.ToString();
